@@ -26,3 +26,97 @@ hr {
     background-color: #f2ead7;
     width: 40%;
 }
+
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:300,600);
+
+body{
+	font-size: 20px;
+	font-family: 'Work Sans', sans-serif;
+	color: #333;
+  font-weight: 300;
+  text-align: center;
+}
+h1.quiz-title{
+    margin: auto;
+  width: 50%;
+  padding: 10px;
+  background-color: #444;
+  font-weight: 300;
+  text-align: center;
+  color: #fff;
+}
+.question{
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 10%;
+  font-size: 30px;
+  margin-bottom: 10px;
+  padding: 10px ;
+}
+.answers {
+  margin-bottom: 20px;
+  margin-left: 10%;
+  text-align: left;
+  display: inline-block;
+}
+.answers label{
+  display: block;
+  margin-bottom: 10px;
+}
+button{
+    font-family: 'Work Sans', sans-serif;
+	font-size: 20px;
+	background-color: #279;
+	color: #fff;
+	border: 0px;
+	border-radius: 3px;
+	padding: 10px;
+	cursor: pointer;
+    margin-bottom: 20px;
+    margin: 10px;
+}
+button:hover{
+	background-color: #38a;
+}
+
+.slide{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.active-slide{
+  opacity: 1;
+  z-index: 2;
+}
+.quiz-container{
+  position: relative;
+  display: flex;
+  margin: auto;
+  height: 300px;
+  width: 50%;
+  top: 50%;
+  background-color: white;   
+}
+
+.button-container{
+    position: relative;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    height: 70px;
+    width: 300px;
+    top: 50%;
+  }
+
+#results{
+    position: absolute;
+    font-size: 30px;
+    display: flex;
+    align-self: flex-end;
+    width: 100%;
+    justify-content: center;
+}
