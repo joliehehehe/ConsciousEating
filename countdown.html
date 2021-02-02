@@ -5,82 +5,60 @@
     <meta name="viewport" content="width=device-width">
     <title>ConsciousEating Countdown Page</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <!-- Linking Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   </head>
   <body>
-    <script src="script.js"></script>
+    <!-- Navigation bar -->
+    <nav class="navbar sticky-top navbar-expand-sm navbar-dark">
+      <!-- Navigation bar icon -->
+      <a class="navbar-brand" href="index.html">
+          <img src="images/logo.png" height="50" class="d-inline-block align-top" alt="ConsciousEating Logo">
+      </a>
+      <!-- Navigation bar links to other pages -->
+      <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+          <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="information.html">Information</a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="quiz.html">Quiz</a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="myplate.html">My Plate</a>
+          </li>
+          <li class="nav-item active">
+          <a class="nav-link" href="countdown.html">Countdown</a>
+          </li>
+      </ul>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+        <a class="nav-link" href="login.html">Login</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="signup.html">Sign Up</a>
+        </li>
+      </ul>
+    </nav>
 
-      <div class="topleft">
-        <p style="font-size:30px">ConsciousEating Lottery</p>
-      </div>
-      <div class="middle">
-        <h1>Results Release Date</h1>
-        <hr>
-        <p id="demo" style="font-size:30px"></p>
-      </div>
-      <div class="bottomleft">
-        <p style="font-size:13px">ConsciousEating Lottery Page</p>
-      </div>
+    <div class="middle">
+      <h1>Results Release Date</h1>
+      <hr>
+      <p id="demo" style="font-size:30px"></p>
     </div>
 
-<style>
-body, html {
-  height: 100%;
-  margin: 0;
-}
+    <footer>
+      <!-- Copyright footer -->
+      <p>Copyright © 2021 by The Generates</p>
+    </footer>
 
-.topleft {
-  position: absolute;
-  top: 0;
-  left: 20px;
-}
-
-.bottomleft {
-  position: absolute;
-  bottom: 0;
-  left: 16px;
-}
-
-.middle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-hr {
-  margin: auto;
-  width: 40%;
-}
-</style>
-
-<script>
-var countDownDate = new Date("Feb 24, 2021 16:16:16").getTime();
-
-// To update countdown every 1 second
-var countdownfunction = setInterval(function() {
-
-  // Get todays date and time
-  var now = new Date().getTime();
-
-  // Get difference between now and dedicated date an the count down date
-  var distance = countDownDate - now;
-
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  // Output the result in an element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-
-  // For when countdown timer is over
-  if (distance < 0) {
-    clearInterval(countdownfunction);
-    document.getElementById("demo").innerHTML = "Lottery Expired";
-  }
-}, 1000);
-</script>
-
+    <!-- Linking JQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- Linking Ajax -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <!-- Linking Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Linking my Javascript file -->
+    <script src="script.js"></script>

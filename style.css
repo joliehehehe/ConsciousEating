@@ -1,0 +1,28 @@
+.navbar{
+    background-color: #2c2d4e;
+}
+
+.nav-link{
+    font-size: 25px;
+}
+
+html{
+    background-color: #f2ead7;
+}
+
+footer{
+    background-color: #f2ead7  
+}
+
+/* Countdown page */  
+.middle {
+    background-color: #f2ead7;
+    top: 50%;
+    left: 50%;  
+    text-align: center;
+}
+  
+hr {
+    background-color: #f2ead7;
+    width: 40%;
+}
