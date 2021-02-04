@@ -136,7 +136,7 @@ var countdownfunction = setInterval(function() {
   const submitButton = document.getElementById('submit');
   const myQuestions = [
     {
-      question: "How many calories does 1 serving of a snickers bar have?",
+      question: "1. How many calories does 1 serving of a snickers bar have?",
       answers: {
         a: "0",
         b: "215",
@@ -145,7 +145,7 @@ var countdownfunction = setInterval(function() {
       correctAnswer: "b"
     },
     {
-      question: "How many grams of ice cream is in 2 reccomended servings?",
+      question: "2. How many grams of ice cream is in 2 reccomended servings?",
       answers: {
         a: "145 grams",
         b: "200 grams",
@@ -154,7 +154,70 @@ var countdownfunction = setInterval(function() {
       correctAnswer: "c"
     },
     {
-      question: "placeholder",
+      question: "3. placeholder",
+      answers: {
+        a: "placeholder",
+        b: "placeholder",
+        c: "placeholder",
+      },
+      correctAnswer: "a"
+    },
+    {
+      question: "4. placeholder",
+      answers: {
+        a: "placeholder",
+        b: "placeholder",
+        c: "placeholder",
+      },
+      correctAnswer: "a"
+    },
+    {
+      question: "5. placeholder",
+      answers: {
+        a: "placeholder",
+        b: "placeholder",
+        c: "placeholder",
+      },
+      correctAnswer: "a"
+    },
+    {
+      question: "6. placeholder",
+      answers: {
+        a: "placeholder",
+        b: "placeholder",
+        c: "placeholder",
+      },
+      correctAnswer: "a"
+    },
+    {
+      question: "7. placeholder",
+      answers: {
+        a: "placeholder",
+        b: "placeholder",
+        c: "placeholder",
+      },
+      correctAnswer: "a"
+    },
+    {
+      question: "8. placeholder",
+      answers: {
+        a: "placeholder",
+        b: "placeholder",
+        c: "placeholder",
+      },
+      correctAnswer: "a"
+    },
+    {
+      question: "9. placeholder",
+      answers: {
+        a: "placeholder",
+        b: "placeholder",
+        c: "placeholder",
+      },
+      correctAnswer: "a"
+    },
+    {
+      question: "10. placeholder",
       answers: {
         a: "placeholder",
         b: "placeholder",
@@ -162,6 +225,7 @@ var countdownfunction = setInterval(function() {
       },
       correctAnswer: "a"
     }
+
   ];
 
   // Kick things off
