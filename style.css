@@ -10,8 +10,16 @@ html{
     background-color: #f2ead7;
 }
 
-footer{
-    background-color: #f2ead7  
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  margin: 2%;
+  margin-bottom: 0px;
+  background-color: #f2ead7;
+  color: black;
+  text-align: left;
 }
 
 /* Countdown page */  
@@ -73,7 +81,7 @@ button{
 	padding: 10px;
 	cursor: pointer;
     margin-bottom: 20px;
-    margin: 10px;
+    margin: 0px;
 }
 button:hover{
 	background-color: #38a;
@@ -119,4 +127,72 @@ button:hover{
     align-self: flex-end;
     width: 100%;
     justify-content: center;
+}
+
+h1.category{
+  margin: auto;
+  width: 80%;
+  padding: 30px;
+  background-color: #444;
+  font-weight: 300;
+  text-align: center;
+  color: #fff;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 20px;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 3vw;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button-fruit {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #f2ead7;
+}
+
+.button-fruit:hover {
+  background-color: #c5ab6f;
+  color: white;
+}
+
+.button-dessert {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #f2ead7;
+}
+
+.button-dessert:hover {
+  background-color: #c5ab6f;
+  color: white;
+}
+
+.category-container{
+  position: relative;
+  display: flex;
+  margin: auto;
+  height: 150px;
+  width: 80%;
+  top: 50%;
+  background-color: rgba(255, 255, 255, 0);
+} 
+
+.button-coming-soon {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #f2ead7;
+}
+
+.button-coming-soon:hover {
+  background-color: #c5ab6f;
+  color: white;
 }
