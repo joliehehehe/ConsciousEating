@@ -17,13 +17,13 @@ var countdownfunction = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   // Output the result in an element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  document.getElementById("count-down").innerHTML = days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
 
   // For when countdown timer is over
   if (distance < 0) {
     clearInterval(countdownfunction);
-    document.getElementById("demo").innerHTML = "Lottery Expired";
+    document.getElementById("count-down").innerHTML = "Lottery Expired";
   }
 }, 1000);
 
