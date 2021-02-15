@@ -228,3 +228,15 @@ h1.category{
   background-color: #c5ab6f;
   color: white;
 }
+
+.card{
+  justify-content: center;
+  margin: 50px;
+}
+
+#card-container{
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
