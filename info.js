@@ -2,8 +2,8 @@
 fetch("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/food/ingredients/9266/information?amount=100&unit=gram", {
 	"method": "GET",
 	"headers": {
-		"x-rapidapi-key": "b959db1482msh863a67168348f33p18f6f1jsnb16c1beeefbd",
-		"x-rapidapi-host": "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com"
+		//"x-rapidapi-key": "b959db1482msh863a67168348f33p18f6f1jsnb16c1beeefbd",
+		//"x-rapidapi-host": "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com"
 	}
 })
 .then(response => {
@@ -41,8 +41,8 @@ fetch("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/food/ingredie
 fetch("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/food/ingredients/9132/information?amount=100&unit=gram", {
 	"method": "GET",
 	"headers": {
-		"x-rapidapi-key": "b959db1482msh863a67168348f33p18f6f1jsnb16c1beeefbd",
-		"x-rapidapi-host": "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com"
+		//"x-rapidapi-key": "b959db1482msh863a67168348f33p18f6f1jsnb16c1beeefbd",
+		//"x-rapidapi-host": "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com"
 	}
 })
 .then(response => {
