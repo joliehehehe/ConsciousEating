@@ -107,25 +107,24 @@
     const submitButton = document.getElementById('submit');
     const myQuestions = [
       {
-        question: "1. placeholder",
+        question: "1. Which fruit contains the least sugar per 100g?",
         answers: {
-          a: "0",
-          b: "215",
-          c: "186"
+          a: "xxx",
+          b: "xxx",
+          c: "xxx"
         },
         correctAnswer: "b"
       },
       {
-        question: "2. placeholder",
+        question: "2. Pineapples contain saturated fats.",
         answers: {
-          a: "145 grams",
-          b: "200 grams",
-          c: "132 grams"
+          a: "True",
+          b: "False"
         },
-        correctAnswer: "c"
+        correctAnswer: "b"
       },
       {
-        question: "3. placeholder",
+        question: "3. How many calories does a honey dew contain?",
         answers: {
           a: "placeholder",
           b: "placeholder",
@@ -134,7 +133,7 @@
         correctAnswer: "a"
       },
       {
-        question: "4. placeholder",
+        question: "4. How much sugar does an apple contain? ",
         answers: {
           a: "placeholder",
           b: "placeholder",
@@ -143,7 +142,7 @@
         correctAnswer: "a"
       },
       {
-        question: "5. placeholder",
+        question: "5. How much fat does 1 serving of grapes contain?",
         answers: {
           a: "placeholder",
           b: "placeholder",
@@ -151,52 +150,7 @@
         },
         correctAnswer: "a"
       },
-      {
-        question: "6. placeholder",
-        answers: {
-          a: "placeholder",
-          b: "placeholder",
-          c: "placeholder",
-        },
-        correctAnswer: "a"
-      },
-      {
-        question: "7. placeholder",
-        answers: {
-          a: "placeholder",
-          b: "placeholder",
-          c: "placeholder",
-        },
-        correctAnswer: "a"
-      },
-      {
-        question: "8. placeholder",
-        answers: {
-          a: "placeholder",
-          b: "placeholder",
-          c: "placeholder",
-        },
-        correctAnswer: "a"
-      },
-      {
-        question: "9. placeholder",
-        answers: {
-          a: "placeholder",
-          b: "placeholder",
-          c: "placeholder",
-        },
-        correctAnswer: "a"
-      },
-      {
-        question: "10. placeholder",
-        answers: {
-          a: "placeholder",
-          b: "placeholder",
-          c: "placeholder",
-        },
-        correctAnswer: "a"
-      }
-  
+      
     ];
   
     // Kick things off
