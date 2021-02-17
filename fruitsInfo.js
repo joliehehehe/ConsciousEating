@@ -11,14 +11,10 @@ fetch("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/food/ingredie
 })
 .then(
   function(data) {
-    // console.log(data.name) // ingredient
     let displayInfo = "";
     let displayCard = "";
     let nutrition = data.nutrition.nutrients;
     for(var i = 0; i < nutrition.length;i++){
-      // console.log(nutrition[i])
-    //   console.log(nutrition[i].title)
-    //   console.log(nutrition[i].amount + nutrition[i].unit)
     displayInfo = `${displayInfo} ${nutrition[i].title}: ${nutrition[i].amount}${nutrition[i].unit}<br>`
       };//end loop
 
@@ -29,8 +25,6 @@ fetch("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/food/ingredie
         <p class="card-text">${displayInfo}</p>
       </div>`
     $('#fruitsCard1').html(displayCard);
-    // console.log(data.title) product
-    // console.log(data.description) //product only
   }
   )
 .catch(err => {
@@ -55,9 +49,6 @@ fetch("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/food/ingredie
     let displayCard = "";
     let nutrition = data.nutrition.nutrients;
     for(var i = 0; i < nutrition.length;i++){
-      // console.log(nutrition[i])
-    //   console.log(nutrition[i].title)
-    //   console.log(nutrition[i].amount + nutrition[i].unit)
     displayInfo = `${displayInfo} ${nutrition[i].title}: ${nutrition[i].amount}${nutrition[i].unit}<br>`
       };//end loop
 
@@ -68,8 +59,6 @@ fetch("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/food/ingredie
         <p class="card-text">${displayInfo}</p>
       </div>`
     $('#fruitsCard2').html(displayCard);
-    // console.log(data.title) product
-    // console.log(data.description) //product only
   }
   )
 .catch(err => {
@@ -89,14 +78,10 @@ fetch("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/food/ingredie
 })
 .then(
   function(data) {
-    // console.log(data.name) // ingredient
     let displayInfo = "";
     let displayCard = "";
     let nutrition = data.nutrition.nutrients;
     for(var i = 0; i < nutrition.length;i++){
-      // console.log(nutrition[i])
-    //   console.log(nutrition[i].title)
-    //   console.log(nutrition[i].amount + nutrition[i].unit)
     displayInfo = `${displayInfo} ${nutrition[i].title}: ${nutrition[i].amount}${nutrition[i].unit}<br>`
       };//end loop
 
@@ -107,8 +92,6 @@ fetch("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/food/ingredie
         <p class="card-text">${displayInfo}</p>
       </div>`
     $('#fruitsCard3').html(displayCard);
-    // console.log(data.title) product
-    // console.log(data.description) //product only
   }
   )
 .catch(err => {
@@ -128,14 +111,10 @@ fetch("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/food/ingredie
 })
 .then(
   function(data) {
-    // console.log(data.name) // ingredient
     let displayInfo = "";
     let displayCard = "";
     let nutrition = data.nutrition.nutrients;
     for(var i = 0; i < nutrition.length;i++){
-      // console.log(nutrition[i])
-    //   console.log(nutrition[i].title)
-    //   console.log(nutrition[i].amount + nutrition[i].unit)
     displayInfo = `${displayInfo} ${nutrition[i].title}: ${nutrition[i].amount}${nutrition[i].unit}<br>`
       };//end loop
 
@@ -146,8 +125,6 @@ fetch("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/food/ingredie
         <p class="card-text">${displayInfo}</p>
       </div>`
     $('#fruitsCard4').html(displayCard);
-    // console.log(data.title) product
-    // console.log(data.description) //product only
   }
   )
 .catch(err => {
@@ -167,14 +144,10 @@ fetch("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/food/ingredie
 })
 .then(
   function(data) {
-    // console.log(data.name) // ingredient
     let displayInfo = "";
     let displayCard = "";
     let nutrition = data.nutrition.nutrients;
     for(var i = 0; i < nutrition.length;i++){
-      // console.log(nutrition[i])
-    //   console.log(nutrition[i].title)
-    //   console.log(nutrition[i].amount + nutrition[i].unit)
     displayInfo = `${displayInfo} ${nutrition[i].title}: ${nutrition[i].amount}${nutrition[i].unit}<br>`
       };//end loop
 
@@ -185,8 +158,6 @@ fetch("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/food/ingredie
         <p class="card-text">${displayInfo}</p>
       </div>`
     $('#fruitsCard5').html(displayCard);
-    // console.log(data.title) product
-    // console.log(data.description) //product only
   }
   )
 .catch(err => {
