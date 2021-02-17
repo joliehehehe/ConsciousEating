@@ -74,11 +74,29 @@ What you will be able to do on this site:
 
 ### Media
 
-- All digital assets were created by Jolie & Mandy
+- Food nutrition images taken from:
+    - Dessert: 
+        - Ben & Jerry's Vanilla Ice Cream
+        - Häagen-Dazs Vanilla Ice Cream
+        - Brownie Bar
+        - Cheesecake
+        - Doughnut
+
+    - Fruits:
+        - Pineapple
+        - Red Grapes
+        - Honey Dew Melon
+        - Apple
+        - Mango
+
+- Site logo, banners and other digital assets were created by Jolie and Mandy
+    
 
 ### Acknowledgements
 
-- I received inspiration for the digital assets from: 
+- We received inspiration for the digital assets from: 
     - Logo
         - [Head](https://dlpng.com/png/1657829)
         - [Cutlery](https://www.shutterstock.com/image-vector/fork-knife-linear-icon-line-editable-790122049)
+        
+- Food nutritional information displayed was taken from [Spoonacular (RapidAPI)](https://rapidapi.com/spoonacular/api/recipe-food-nutrition/endpoints)/[Spoonacular](https://spoonacular.com/food-api/)
