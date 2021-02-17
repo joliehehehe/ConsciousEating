@@ -83,11 +83,11 @@ What you will be able to do on this site:
         - Doughnut
 
     - Fruits:
-        - Pineapple
-        - Red Grapes
-        - Honey Dew Melon
-        - Apple
-        - Mango
+        - [Pineapple](https://www.healthifyme.com/blog/wp-content/uploads/2015/12/shutterstock_1670265607-1.jpg)
+        - [Red Grapes](https://specialtyproduce.com/sppics/1223.png)
+        - [Honey Dew Melon](https://upload.wikimedia.org/wikipedia/commons/f/f5/Honeydew.jpg)
+        - [Mango](https://imagesvc.meredithcorp.io/v3/mm/image?q=85&c=sc&poi=face&url=https%3A%2F%2Fimg1.cookinglight.timeinc.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2F4_3_horizontal_-_1200x900%2Fpublic%2Fimage%2F2017%2F05%2Fmain%2Fmangoes-1706p10.jpg%3Fitok%3DZWXWWado)
+        - [Apple](https://5.imimg.com/data5/LM/DU/MY-22954806/apple-fruit-500x500.jpg)
 
 - Site logo, banners and other digital assets were created by Jolie and Mandy
     
