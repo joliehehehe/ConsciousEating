@@ -2,7 +2,7 @@
 fetch("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/food/ingredients/9266/information?amount=100&unit=gram", {
 	"method": "GET",
 	"headers": {
-    "x-rapidapi-key": "32523caabcmsh23232363fbd9d08p1d80fejsncae62cd3ef9f",
+    "x-rapidapi-key": "",
 		"x-rapidapi-host": "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com"
 	}
 })
@@ -38,10 +38,10 @@ fetch("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/food/ingredie
 });
 
 //Info 2
-fetch("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/food/ingredients/9266/information?amount=100&unit=gram", {
+fetch("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/food/ingredients/9132/information?amount=100&unit=gram", {
 	"method": "GET",
 	"headers": {
-    "x-rapidapi-key": "32523caabcmsh23232363fbd9d08p1d80fejsncae62cd3ef9f",
+    "x-rapidapi-key": "",
 		"x-rapidapi-host": "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com"
 	}
 })
@@ -77,10 +77,10 @@ fetch("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/food/ingredie
 });
 
 //Info 3
-fetch("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/food/ingredients/9266/information?amount=100&unit=gram", {
+fetch("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/food/ingredients/9184/information?amount=100&unit=gram", {
 	"method": "GET",
 	"headers": {
-    "x-rapidapi-key": "32523caabcmsh23232363fbd9d08p1d80fejsncae62cd3ef9f",
+    "x-rapidapi-key": "",
 		"x-rapidapi-host": "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com"
 	}
 })
@@ -116,49 +116,10 @@ fetch("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/food/ingredie
 });
 
 //Info 4
-fetch("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/food/ingredients/9266/information?amount=100&unit=gram", {
+fetch("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/food/ingredients/9176/information?amount=100&unit=gram", {
 	"method": "GET",
 	"headers": {
-    "x-rapidapi-key": "32523caabcmsh23232363fbd9d08p1d80fejsncae62cd3ef9f",
-		"x-rapidapi-host": "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com"
-	}
-})
-.then(response => {
-	return response.json();
-})
-.then(
-  function(data) {
-    // console.log(data.name) // ingredient
-    let displayInfo = "";
-    let displayCard = "";
-    let nutrition = data.nutrition.nutrients;
-    for(var i = 0; i < nutrition.length;i++){
-      // console.log(nutrition[i])
-    //   console.log(nutrition[i].title)
-    //   console.log(nutrition[i].amount + nutrition[i].unit)
-    displayInfo = `${displayInfo} ${nutrition[i].title}: ${nutrition[i].amount}${nutrition[i].unit}<<br>`
-      };//end loop
-
-    displayCard = `${displayCard}
-      <img class="card-img-top" src="https://imagesvc.meredithcorp.io/v3/mm/image?q=85&c=sc&poi=face&url=https%3A%2F%2Fimg1.cookinglight.timeinc.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2F4_3_horizontal_-_1200x900%2Fpublic%2Fimage%2F2017%2F05%2Fmain%2Fmangoes-1706p10.jpg" alt="${data.name} image">
-      <div class="card-body">
-        <h5 class="card-title">${data.name}</h5>
-        <p class="card-text">${displayInfo}</p>
-      </div>`
-    $('#fruitsCard4').html(displayCard);
-    // console.log(data.title) product
-    // console.log(data.description) //product only
-  }
-  )
-.catch(err => {
-	console.error(err);
-});
-
-//Info 5
-fetch("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/food/ingredients/9266/information?amount=100&unit=gram", {
-	"method": "GET",
-	"headers": {
-    "x-rapidapi-key": "32523caabcmsh23232363fbd9d08p1d80fejsncae62cd3ef9f",
+    "x-rapidapi-key": "",
 		"x-rapidapi-host": "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com"
 	}
 })
@@ -179,7 +140,46 @@ fetch("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/food/ingredie
       };//end loop
 
     displayCard = `${displayCard}
-      <img class="card-img-top" src="https://5.imimg.com/data5/LM/DU/MY-22954806/apple-fruit-500x500.jpg" alt="${data.name} image">
+      <img class="card-img-top" src="https://imagesvc.meredithcorp.io/v3/mm/image?q=85&c=sc&poi=face&url=https%3A%2F%2Fimg1.cookinglight.timeinc.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2F4_3_horizontal_-_1200x900%2Fpublic%2Fimage%2F2017%2F05%2Fmain%2Fmangoes-1706p10.jpg" alt="${data.name} image">
+      <div class="card-body">
+        <h5 class="card-title">${data.name}</h5>
+        <p class="card-text">${displayInfo}</p>
+      </div>`
+    $('#fruitsCard4').html(displayCard);
+    // console.log(data.title) product
+    // console.log(data.description) //product only
+  }
+  )
+.catch(err => {
+	console.error(err);
+});
+
+//Info 5
+fetch("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/food/ingredients/9003/information?amount=100&unit=gram", {
+	"method": "GET",
+	"headers": {
+    "x-rapidapi-key": "",
+		"x-rapidapi-host": "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com"
+	}
+})
+.then(response => {
+	return response.json();
+})
+.then(
+  function(data) {
+    // console.log(data.name) // ingredient
+    let displayInfo = "";
+    let displayCard = "";
+    let nutrition = data.nutrition.nutrients;
+    for(var i = 0; i < nutrition.length;i++){
+      // console.log(nutrition[i])
+    //   console.log(nutrition[i].title)
+    //   console.log(nutrition[i].amount + nutrition[i].unit)
+    displayInfo = `${displayInfo} ${nutrition[i].title}: ${nutrition[i].amount}${nutrition[i].unit}<br>`
+      };//end loop
+
+    displayCard = `${displayCard}
+      <img class="card-img-top" src="https://i.dailymail.co.uk/1s/2019/07/24/13/16438126-0-image-a-8_1563971392042.jpg" alt="${data.name} image">
       <div class="card-body">
         <h5 class="card-title">${data.name}</h5>
         <p class="card-text">${displayInfo}</p>
