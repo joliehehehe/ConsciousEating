@@ -107,39 +107,39 @@
     const submitButton = document.getElementById('submit');
     const myQuestions = [
       {
-        question: "1. Which fruit contains the least sugar per 100g?",
+        question: "1. Which fruit contains the least sugar per serving?",
         answers: {
-          a: "xxx",
-          b: "xxx",
-          c: "xxx"
+          a: "Pineapple",
+          b: "Red Grapes",
+          c: "Honey Dew Melon"
         },
-        correctAnswer: "b"
+        correctAnswer: "a"
       },
       {
-        question: "2. Pineapples contain saturated fats.",
+        question: "2. Mangoes contain saturated fats.",
         answers: {
           a: "True",
           b: "False"
         },
+        correctAnswer: "a"
+      },
+      {
+        question: "3. How many calories does a serving of honey dew contain?",
+        answers: {
+          a: "74kcal",
+          b: "46kcal",
+          c: "36kcal",
+        },
+        correctAnswer: "c"
+      },
+      {
+        question: "4. How much sugar does a serving of an apple contain? ",
+        answers: {
+          a: "14.52g",
+          b: "10.39g",
+          c: "12.24g",
+        },
         correctAnswer: "b"
-      },
-      {
-        question: "3. How many calories does a honey dew contain?",
-        answers: {
-          a: "placeholder",
-          b: "placeholder",
-          c: "placeholder",
-        },
-        correctAnswer: "a"
-      },
-      {
-        question: "4. How much sugar does an apple contain? ",
-        answers: {
-          a: "placeholder",
-          b: "placeholder",
-          c: "placeholder",
-        },
-        correctAnswer: "a"
       },
       {
         question: "5. How much fat does 1 serving of grapes contain?",
