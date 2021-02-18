@@ -248,3 +248,16 @@ h1.category{
   border-color: #2c2d4e;
 }
 
+.about{
+  font-size: 20px;
+	font-family: 'Work Sans', sans-serif;
+	color: #333;
+  font-weight: 300;
+  text-align: center;
+  background-color: #bdd8c8c0;
+  width: 80%;
+  margin: auto;
+  padding: 40px;
+	border: 0px;
+  border-radius: 40px;
+}
