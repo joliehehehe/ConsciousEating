@@ -26,6 +26,8 @@ What you will be able to do on this site:
     - Users will be able to participate in quizzes. By achieving full marks, users will be given collectibles and get the chance to participate in the monthly lotteries!
 - My Plate Page
     - Users are able to view the collectibles they received from the quizzes.
+- Loading Page
+    - User will see a loading animation, auto redirect to countdown page.
 - Countdown Page
     - Users will be able to view a real-time countdown to the results of the monthly lottery
 
@@ -59,10 +61,11 @@ What you will be able to do on this site:
 ### Task List
 | No.  |     Feature     |  Date Tested |
 |------|:---------------:|-------------:|
-| 1    |  Navigation Bar |    01/02     |
-| 2    | Countdown Timer |    01/02     |
-| 3    |      Quiz       |    05/02     |
-| 4    |                 |              |
+|  1   |   Navigation Bar |    01/02     |
+|  2   |  Countdown Timer |    01/02     |
+|  3   |       Quiz       |    05/02     |
+|  4   |API Implementation|    10/02     |
+|  5   |    Loading Page  |    18/02     |
 
 
 ## Credits
@@ -76,11 +79,11 @@ What you will be able to do on this site:
 
 - Food nutrition images taken from:
     - Dessert: 
-        - Ben & Jerry's Vanilla Ice Cream
-        - Häagen-Dazs Vanilla Ice Cream
-        - Brownie Bar
-        - Cheesecake
-        - Doughnut
+        - Ben & Jerry's Vanilla Ice Cream [Spoonacular APIs]
+        - Häagen-Dazs Vanilla Ice Cream [Spoonacular APIs]
+        - Brownie Bar [Spoonacular APIs]
+        - Cheesecake [Spoonacular APIs]
+        - Snickers [Spoonacular APIs]
 
     - Fruits:
         - [Pineapple](https://www.healthifyme.com/blog/wp-content/uploads/2015/12/shutterstock_1670265607-1.jpg)
