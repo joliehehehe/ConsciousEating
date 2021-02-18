@@ -1,5 +1,5 @@
 // Countdown page
-var countDownDate = new Date("Feb 24, 2021 16:16:16").getTime();
+var countDownDate = new Date("Mar 24, 2021 16:16:16").getTime();
 
 // To update countdown every 1 second
 var countdownfunction = setInterval(function() {
@@ -138,9 +138,9 @@ var countdownfunction = setInterval(function() {
     {
       question: "1. How many calories does 1 serving of Ben & Jerry's vanilla Ice cream contain?",
       answers: {
-        a: "0",
-        b: "215",
-        c: "186"
+        a: "127kcal",
+        b: "250kcal",
+        c: "445kcal"
       },
       correctAnswer: "b"
     },
@@ -150,34 +150,34 @@ var countdownfunction = setInterval(function() {
         a: "Häagen-Dazs Vanilla Ice Cream",
         b: "Ben and Jerry's Vanilla Ice Cream",
       },
-      correctAnswer: "a"
+      correctAnswer: "b"
     },
     {
       question: "3. How much saturated fat does 1 serving of brownie contain?",
       answers: {
-        a: "placeholder",
-        b: "placeholder",
-        c: "placeholder",
+        a: "0.2g",
+        b: "0.7g",
+        c: "0.5g",
+      },
+      correctAnswer: "c"
+    },
+    {
+      question: "4. How much cholesterol does 1 serving of cheesecake contain?",
+      answers: {
+        a: "80mg",
+        b: "8mg",
+        c: "75mg",
       },
       correctAnswer: "a"
     },
     {
-      question: "4. How much Cholesterol does 1 serving of cheesecake contain?",
+      question: "5. How much protein does 1 serving of a snickers candy bar contain?",
       answers: {
-        a: "placeholder",
-        b: "placeholder",
-        c: "placeholder",
+        a: "0.7g",
+        b: "6g",
+        c: "3g",
       },
-      correctAnswer: "a"
-    },
-    {
-      question: "5. How much protein does 1 serving of a doughnut contain?",
-      answers: {
-        a: "placeholder",
-        b: "placeholder",
-        c: "placeholder",
-      },
-      correctAnswer: "a"
+      correctAnswer: "c"
     },
 
   ];
