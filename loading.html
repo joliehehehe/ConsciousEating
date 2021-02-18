@@ -1,0 +1,55 @@
+<title>Loading</title>
+<body style="background-color:#f2ead7;">
+<div style="text-align:center;">
+<br>
+<h1>Lottery Countdown</h1>
+<br/>
+<p>Scored full marks for the quiz? Check your email for the lottery participation confirmation!</p>
+<p>Check back regularly to find out the results for the lottery!</p>
+<br/>
+<br/>
+<p>TheGenerates</p>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<span id="timer"></span></div>
+</body>
+<style>
+body {
+	font-family: Helvetica, Verdana, sans-serif;
+}
+h1 {
+	color: rgb(78, 78, 78);
+	font-size: 40px;
+}
+p {
+	line-height: 1;
+	color: rgb(78, 78, 78);
+	font-size: 20px;
+}
+span {
+	color: rgb(78, 78, 78);
+	font-size: 15px;
+}
+</style>
+<script type="text/javascript">
+var count = 5;
+var redirect = "countdown.html";
+function countDown(){
+    var timer = document.getElementById("timer");
+    if(count > 0){
+        count--;
+        timer.innerHTML = "The countdown will load in "+count+" seconds.";
+        setTimeout("countDown()", 1000);
+}else{
+        window.location.href = redirect;
+    }
+}
+countDown();
+</script>
