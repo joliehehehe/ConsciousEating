@@ -144,11 +144,11 @@
       {
         question: "5. How much fat does 1 serving of grapes contain?",
         answers: {
-          a: "placeholder",
-          b: "placeholder",
-          c: "placeholder",
+          a: "0.23g",
+          b: "0.16g",
+          c: "0.02g",
         },
-        correctAnswer: "a"
+        correctAnswer: "b"
       },
       
     ];
