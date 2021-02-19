@@ -269,16 +269,16 @@ justify-content: center;
 
 #sundae-trophy{
 display: flex;
-width: 400px;
-height: 400px;
+width: 350px;
+height: auto;
 padding: 2%; 
 border: 0;
 }
 @media only screen and (max-width: 600px) {
   #sundae-trophy{
     display: flex;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: auto;
     padding: 2%; 
     border: 0;
     }
