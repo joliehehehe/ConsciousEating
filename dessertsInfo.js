@@ -101,7 +101,7 @@ fetch("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/food/products
 fetch("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/food/products/87915", {
 	"method": "GET",
 	"headers": {
-    "x-rapidapi-key": "b959db1482msh863a67168348f33p18f6f1jsnb16c1beeefbd ",
+    "x-rapidapi-key": "b959db1482msh863a67168348f33p18f6f1jsnb16c1beeefbd",
 		"x-rapidapi-host": "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com"
 	}
 })
@@ -134,7 +134,7 @@ fetch("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/food/products
 fetch("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/food/products/128368", {
 	"method": "GET",
 	"headers": {
-    "x-rapidapi-key": "9ba6b30026msh5ce0279880dc2e4p12b059jsn1686f10d4d32 ",
+    "x-rapidapi-key": "9ba6b30026msh5ce0279880dc2e4p12b059jsn1686f10d4d32",
 		"x-rapidapi-host": "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com"
 	}
 })
