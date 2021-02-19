@@ -66,6 +66,7 @@ What you will be able to do on this site:
 |  3   |       Quiz       |    05/02     |
 |  4   |API Implementation|    10/02     |
 |  5   |    Loading Page  |    18/02     |
+|  6   | Collectible Page |  Incomplete  |
 
 
 ## Credits

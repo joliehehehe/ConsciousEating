@@ -49,12 +49,8 @@
   <h1 class= "quiz-title" style = "width: 80%; padding-top: 2%; padding-bottom: 2%;border: 0px;border-radius: 40px;">My Plate</h1>
   <div class="plate"><img src="images/MYPLATE_wow.png" style="width: 100%; height: auto;margin-top: 10px;"/></div>
   <div id= "table" >
-    <div id = "sundae-trophy">
-      <img src="images/sundae-no-bg.png" style="width: 100%; height: auto;margin-top: 10px;"/>
-    </div>
-    <div id = "fruit-trophy">
-      <img src="images/fruits-no-bg.png" style="width: 100%; height: auto;margin-top: 10px;"/>
-    </div>
+    <div id="sundae-trophy"></div>
+    <div id="fruit-trophy"></div>
   </div>
   <br>
   <br>
@@ -71,20 +67,22 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <!-- Linking Bootstrap JS -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <!-- Linking my Javascript file -->
   <script>
-    if(localStorage.getItem("allDesserts") == false) {
-      $("#sundae-trophy").hide()
+    let scoreDesserts = localStorage.getItem("allDesserts")
+    if(scoreDesserts == true) {
+      $('div#sundae-trophy').html(`<img src="images/sundae-no-bg.png" style="width: 100%; height: auto;margin-top: 10px;" class="sundae-image"/>`)
+      // $('img.sundae-image').hide()
     }else{
-      $("#sundae-trophy").show()
+      $('div#sundae-trophy').html(`<img src="images/sundae-no-bg.png" style="width: 100%; height: auto;margin-top: 10px;" class="sundae-image"/>`)
     }
-    if(localStorage.getItem("allFruits") == false) {
-      $("#fruit-trophy").hide()
+
+    let scoreFruits = localStorage.getItem("allFruits")
+    if(scoreFruits == true) {
+      $('div#fruit-trophy').html(`<img src="images/fruits-no-bg.png" style="width: 100%; height: auto;margin-top: 10px;" class="fruits-image"/>`)
+      // $("img.fruits-image").hide()
     }else{
-      $("#fruit-trophy").show()
+      $('div#fruit-trophy').html(`<img src="images/fruits-no-bg.png" style="width: 100%; height: auto;margin-top: 10px;" class="fruits-image"/>`)
     }
-  </script>
-  <script src="quiz1.js"></script>
-  <script src="quiz2.js"></script>
-  </body>
+  </script>  
+</body>
 </html>
