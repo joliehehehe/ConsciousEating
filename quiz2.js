@@ -71,6 +71,16 @@
   
       // show number of correct answers out of total
       resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
+      
+      //[cher]num correct only exist here.. so we check here..
+      if(numCorrect == 5){ 
+        //[cher] use localstorage properly..
+        localStorage.setItem("allFruits", true);
+      }else{
+        localStorage.setItem("allFruits", false);
+      }
+
+      return numCorrect
     }
   
     function showSlide(n) {

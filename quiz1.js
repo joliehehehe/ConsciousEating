@@ -72,15 +72,13 @@
 
     // show number of correct answers out of total
     resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
-    // console.log("hi testing numcorrect", numCorrect);
+
     //[cher]num correct only exist here.. so we check here..
       if(numCorrect == 5){ 
       //[cher] use localstorage properly..
-      localStorage.setItem("allDessert", true);
-      // console.log("... num correct true");
+      localStorage.setItem("allDesserts", true);
     }else{
-      //globalThis.allDessert = false;
-      localStorage.setItem("allDessert", false);
+      localStorage.setItem("allDesserts", false);
     }
 
     return numCorrect
@@ -180,7 +178,6 @@
 
   // Event listeners
   submitButton.addEventListener('click', showResults);
-  submitButton.addEventListener('click', showTrophy);
   previousButton.addEventListener("click", showPreviousSlide);
   nextButton.addEventListener("click", showNextSlide);
 })();
