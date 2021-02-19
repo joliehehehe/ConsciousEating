@@ -96,10 +96,9 @@ What you will be able to do on this site:
     
 
 ### Acknowledgements
-
 - We received inspiration for the digital assets from: 
     - Logo
         - [Head](https://dlpng.com/png/1657829)
         - [Cutlery](https://www.shutterstock.com/image-vector/fork-knife-linear-icon-line-editable-790122049)
-        
+- Guiding and tips were given by Ms Dai Mei Hua and Mr Malcolm Yam 
 - Food nutritional information displayed was taken from [Spoonacular (RapidAPI)](https://rapidapi.com/spoonacular/api/recipe-food-nutrition/endpoints)/[Spoonacular](https://spoonacular.com/food-api/)
