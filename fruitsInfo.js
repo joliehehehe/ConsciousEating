@@ -2,7 +2,7 @@
 fetch("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/food/ingredients/9266/information?amount=100&unit=gram", {
 	"method": "GET",
 	"headers": {
-    "x-rapidapi-key": "",
+    "x-rapidapi-key": "9ba6b30026msh5ce0279880dc2e4p12b059jsn1686f10d4d32",
 		"x-rapidapi-host": "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com"
 	}
 })
@@ -35,7 +35,7 @@ fetch("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/food/ingredie
 fetch("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/food/ingredients/9132/information?amount=100&unit=gram", {
 	"method": "GET",
 	"headers": {
-    "x-rapidapi-key": "",
+    "x-rapidapi-key": "32523caabcmsh23232363fbd9d08p1d80fejsncae62cd3ef9f",
 		"x-rapidapi-host": "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com"
 	}
 })
@@ -69,7 +69,7 @@ fetch("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/food/ingredie
 fetch("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/food/ingredients/9184/information?amount=100&unit=gram", {
 	"method": "GET",
 	"headers": {
-    "x-rapidapi-key": "",
+    "x-rapidapi-key": "32523caabcmsh23232363fbd9d08p1d80fejsncae62cd3ef9f",
 		"x-rapidapi-host": "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com"
 	}
 })
@@ -102,7 +102,7 @@ fetch("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/food/ingredie
 fetch("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/food/ingredients/9176/information?amount=100&unit=gram", {
 	"method": "GET",
 	"headers": {
-    "x-rapidapi-key": "",
+    "x-rapidapi-key": "766f63c33amshabf26dd7edc6884p10d588jsn4b7d0340eaac",
 		"x-rapidapi-host": "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com"
 	}
 })
@@ -135,7 +135,7 @@ fetch("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/food/ingredie
 fetch("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/food/ingredients/9003/information?amount=100&unit=gram", {
 	"method": "GET",
 	"headers": {
-    "x-rapidapi-key": "",
+    "x-rapidapi-key": "766f63c33amshabf26dd7edc6884p10d588jsn4b7d0340eaac",
 		"x-rapidapi-host": "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com"
 	}
 })
