@@ -5,7 +5,7 @@ through quizzes, allowing them to earn incentives when they score full marks for
 
 ## Website
 
-[ConsciousEating](https://joliehehehe.github.io/Integrated-Project/) was created to educate users on the nurtritional value of the food that they eat 
+[ConsciousEating](https://joliehehehe.github.io/ConsciousEating) was created to educate users on the nurtritional value of the food that they eat 
 on a daily in a fun and engaging way. 
 What you will be able to do on this site:
 
