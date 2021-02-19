@@ -1,173 +1,186 @@
 (function(){
-    // Functions
-    function buildQuiz(){
-      // variable to store the HTML output
-      const output = [];
-  
-      // for each question...
-      myQuestions.forEach(
-        (currentQuestion, questionNumber) => {
-  
-          // variable to store the list of possible answers
-          const answers = [];
-  
-          // and for each available answer...
-          for(letter in currentQuestion.answers){
-  
-            // ...add an HTML radio button
-            answers.push(
-              `<label>
-                <input type="radio" name="question${questionNumber}" value="${letter}">
-                ${letter} :
-                ${currentQuestion.answers[letter]}
-              </label>`
-            );
-          }
-  
-          // add this question and its answers to the output
-          output.push(
-            `<div class="slide">
-              <div class="question"> ${currentQuestion.question} </div>
-              <div class="answers"> ${answers.join("")} </div>
-            </div>`
+  // Functions
+  function buildQuiz(){
+    // variable to store the HTML output
+    const output = [];
+
+    // for each question...
+    myQuestions.forEach(
+      (currentQuestion, questionNumber) => {
+
+        // variable to store the list of possible answers
+        const answers = [];
+
+        // and for each available answer...
+        for(letter in currentQuestion.answers){
+
+          // ...add an HTML radio button
+          answers.push(
+            `<label>
+              <input type="radio" name="question${questionNumber}" value="${letter}">
+              ${letter} :
+              ${currentQuestion.answers[letter]}
+            </label>`
           );
         }
-      );
-  
-      // finally combine our output list into one string of HTML and put it on the page
-      quizContainer.innerHTML = output.join('');
-    }
-  
-    function showResults(){
-  
-      // gather answer containers from our quiz
-      const answerContainers = quizContainer.querySelectorAll('.answers');
-  
-      // keep track of user's answers
-      let numCorrect = 0;
-  
-      // for each question...
-      myQuestions.forEach( (currentQuestion, questionNumber) => {
-  
-        // find selected answer
-        const answerContainer = answerContainers[questionNumber];
-        const selector = `input[name=question${questionNumber}]:checked`;
-        const userAnswer = (answerContainer.querySelector(selector) || {}).value;
-  
-        // if answer is correct
-        if(userAnswer === currentQuestion.correctAnswer){
-          // add to the number of correct answers
-          numCorrect++;
-  
-          // color the answers green
-          answerContainers[questionNumber].style.color = 'lightgreen';
-        }
-        // if answer is wrong or blank
-        else{
-          // color the answers red
-          answerContainers[questionNumber].style.color = 'red';
-        }
-      });
-  
-      // show number of correct answers out of total
-      resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
-    }
-  
-    function showSlide(n) {
-      slides[currentSlide].classList.remove('active-slide');
-      slides[n].classList.add('active-slide');
-      currentSlide = n;
-      if(currentSlide === 0){
-        previousButton.style.display = 'none';
+
+        // add this question and its answers to the output
+        output.push(
+          `<div class="slide">
+            <div class="question"> ${currentQuestion.question} </div>
+            <div class="answers"> ${answers.join("")} </div>
+          </div>`
+        );
       }
+    );
+
+    // finally combine our output list into one string of HTML and put it on the page
+    quizContainer.innerHTML = output.join('');
+  }
+
+  function showResults(){
+
+    // gather answer containers from our quiz
+    const answerContainers = quizContainer.querySelectorAll('.answers');
+
+    // keep track of user's answers
+    let numCorrect = 0;
+    let allDessert = false;
+
+    // for each question...
+    myQuestions.forEach( (currentQuestion, questionNumber) => {
+
+      // find selected answer
+      const answerContainer = answerContainers[questionNumber];
+      const selector = `input[name=question${questionNumber}]:checked`;
+      const userAnswer = (answerContainer.querySelector(selector) || {}).value;
+
+      // if answer is correct
+      if(userAnswer === currentQuestion.correctAnswer){
+        // add to the number of correct answers
+        numCorrect++;
+
+        // color the answers green
+        answerContainers[questionNumber].style.color = 'lightgreen';
+      }
+      // if answer is wrong or blank
       else{
-        previousButton.style.display = 'inline-block';
+        // color the answers red
+        answerContainers[questionNumber].style.color = 'red';
       }
-      if(currentSlide === slides.length-1){
-        nextButton.style.display = 'none';
-        submitButton.style.display = 'inline-block';
-      }
-      else{
-        nextButton.style.display = 'inline-block';
-        submitButton.style.display = 'none';
-      }
+    });
+
+    // show number of correct answers out of total
+    resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
+    // console.log("hi testing numcorrect", numCorrect);
+    //[cher]num correct only exist here.. so we check here..
+      if(numCorrect == 5){ 
+      //[cher] use localstorage properly..
+      localStorage.setItem("allDessert", true);
+      // console.log("... num correct true");
+    }else{
+      //globalThis.allDessert = false;
+      localStorage.setItem("allDessert", false);
     }
-  
-    function showNextSlide() {
-      showSlide(currentSlide + 1);
+
+    return numCorrect
+  }
+
+  function showSlide(n) {
+    slides[currentSlide].classList.remove('active-slide');
+    slides[n].classList.add('active-slide');
+    currentSlide = n;
+    if(currentSlide === 0){
+      previousButton.style.display = 'none';
     }
-  
-    function showPreviousSlide() {
-      showSlide(currentSlide - 1);
+    else{
+      previousButton.style.display = 'inline-block';
     }
-  
-    // Variables
-    const quizContainer = document.getElementById('quiz');
-    const resultsContainer = document.getElementById('results');
-    const submitButton = document.getElementById('submit');
-    const myQuestions = [
-      {
-        question: "1. How many calories does 1 serving of Ben & Jerry's vanilla Ice cream contain?",
-        answers: {
-          a: "127kcal",
-          b: "250kcal",
-          c: "445kcal"
-        },
-        correctAnswer: "b"
+    if(currentSlide === slides.length-1){
+      nextButton.style.display = 'none';
+      submitButton.style.display = 'inline-block';
+    }
+    else{
+      nextButton.style.display = 'inline-block';
+      submitButton.style.display = 'none';
+    }
+  }
+
+  function showNextSlide() {
+    showSlide(currentSlide + 1);
+  }
+
+  function showPreviousSlide() {
+    showSlide(currentSlide - 1);
+  }
+
+  // Variables
+  const quizContainer = document.getElementById('quiz');
+  const resultsContainer = document.getElementById('results');
+  const submitButton = document.getElementById('submit');
+  const myQuestions = [
+    {
+      question: "1. How many calories does 1 serving of Ben & Jerry's vanilla Ice cream contain?",
+      answers: {
+        a: "127kcal",
+        b: "250kcal",
+        c: "445kcal"
       },
-      {
-        question: "2. Which of the following contains more sugar per serving?",
-        answers: {
-          a: "Häagen-Dazs Vanilla Ice Cream",
-          b: "Ben and Jerry's Vanilla Ice Cream",
-        },
-        correctAnswer: "b"
+      correctAnswer: "b"
+    },
+    {
+      question: "2. Which of the following contains more sugar per serving?",
+      answers: {
+        a: "Häagen-Dazs Vanilla Ice Cream",
+        b: "Ben and Jerry's Vanilla Ice Cream",
       },
-      {
-        question: "3. How much saturated fat does 1 serving of brownie contain?",
-        answers: {
-          a: "0.2g",
-          b: "0.7g",
-          c: "0.5g",
-        },
-        correctAnswer: "c"
+      correctAnswer: "b"
+    },
+    {
+      question: "3. How much saturated fat does 1 serving of brownie contain?",
+      answers: {
+        a: "0.2g",
+        b: "0.7g",
+        c: "0.5g",
       },
-      {
-        question: "4. How much cholesterol does 1 serving of cheesecake contain?",
-        answers: {
-          a: "80mg",
-          b: "8mg",
-          c: "75mg",
-        },
-        correctAnswer: "a"
+      correctAnswer: "c"
+    },
+    {
+      question: "4. How much cholesterol does 1 serving of cheesecake contain?",
+      answers: {
+        a: "80mg",
+        b: "8mg",
+        c: "75mg",
       },
-      {
-        question: "5. How much protein does 1 serving of a snickers candy bar contain?",
-        answers: {
-          a: "0.7g",
-          b: "6g",
-          c: "3g",
-        },
-        correctAnswer: "c"
+      correctAnswer: "a"
+    },
+    {
+      question: "5. How much protein does 1 serving of a snickers candy bar contain?",
+      answers: {
+        a: "0.7g",
+        b: "6g",
+        c: "3g",
       },
-  
-    ];
-  
-    // Kick things off
-    buildQuiz();
-  
-    // Pagination
-    const previousButton = document.getElementById("previous");
-    const nextButton = document.getElementById("next");
-    const slides = document.querySelectorAll(".slide");
-    let currentSlide = 0;
-  
-    // Show the first slide
-    showSlide(currentSlide);
-  
-    // Event listeners
-    submitButton.addEventListener('click', showResults);
-    previousButton.addEventListener("click", showPreviousSlide);
-    nextButton.addEventListener("click", showNextSlide);
-  })();
-  
+      correctAnswer: "c"
+    },
+
+  ];
+
+  // Kick things off
+  buildQuiz();
+
+  // Pagination
+  const previousButton = document.getElementById("previous");
+  const nextButton = document.getElementById("next");
+  const slides = document.querySelectorAll(".slide");
+  let currentSlide = 0;
+
+  // Show the first slide
+  showSlide(currentSlide);
+
+  // Event listeners
+  submitButton.addEventListener('click', showResults);
+  submitButton.addEventListener('click', showTrophy);
+  previousButton.addEventListener("click", showPreviousSlide);
+  nextButton.addEventListener("click", showNextSlide);
+})();
