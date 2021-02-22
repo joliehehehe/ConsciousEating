@@ -31,6 +31,13 @@ What you will be able to do on this site:
 - Countdown Page
     - Users will be able to view a real-time countdown to the results of the monthly lottery
 
+## Design Rationale
+
+For our application, we wanted to go with something simple and easy for users to maneuver. Therefore, we used a basic navigation bar at the top of our page. By making it simple and easy for users to use, users will be more inclined to use it. The colours we chose were selected to ease the eyes of users when they use our application. If an application has extremely bright colours, it might chase away potential users because of their preference for more soothing colours.
+
+For the mascots on our home page, both were designed to represent each category in the site, Fruits and Dessert. The one on the left is based on the image of a strawberry since fruits is one of the categories in our application and the one on the right is based on the image of chocolate since desserts is another category available on our site. Their hand gestures are meant to welcome the user to our application when they first arrive onto the home page.
+
+
 ## Technologies Used
 
 ### Languages
