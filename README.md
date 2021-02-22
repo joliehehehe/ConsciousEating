@@ -51,23 +51,23 @@ For the mascots on our home page, both were designed to represent each category 
 
 ## Wire Frames
 
-<img src="images/home_page.png" alt="Home page wireframe">
-<img src="images/information_page.png" alt="Information category page wireframe">
-<img src="images/info_fruits.png" alt="Fruits information page wireframe">
-<img src="images/info_dessert.png" alt="Dessert information page wireframe">
-<img src="images/quiz_page.png" alt="Quiz page wireframe">
-<img src="images/my_plate.png" alt="My plate wireframe">
-<img src="images/login_page.png" alt="Login page wireframe">
-<img src="images/signup_page.png" alt="Sign up page wireframe">
+<img src="images/home_page.png" alt="Home page wireframe" style="width: 60%; height: auto">
+<img src="images/information_page.png" alt="Information category page wireframe" style="width: 60%; height: auto">
+<img src="images/info_fruits.png" alt="Fruits information page wireframe" style="width: 60%; height: auto">
+<img src="images/info_dessert.png" alt="Dessert information page wireframe" style="width: 60%; height: auto">
+<img src="images/quiz_page.png" alt="Quiz page wireframe" style="width: 60%; height: auto">
+<img src="images/my_plate.png" alt="My plate wireframe" style="width: 60%; height: auto">
+<img src="images/login_page.png" alt="Login page wireframe" style="width: 60%; height: auto">
+<img src="images/signup_page.png" alt="Sign up page wireframe" style="width: 60%; height: auto">
 
 ## Testing
 
 ### Page Preview
-<img src="images/home.png" alt="Home page preview">
-<img src="images/categories.png" alt="Information category page preview">
-<img src="images/info.png" alt="Dessert information page preview">
-<img src="images/quiz.png" alt="Quiz page preview">
-<img src="images/plate.png" alt="My plate preview">
+<img src="images/home.png" alt="Home page preview" style="width: 60%; height: auto">
+<img src="images/categories.png" alt="Information category page preview" style="width: 60%; height: auto">
+<img src="images/info.png" alt="Dessert information page preview" style="width: 60%; height: auto">
+<img src="images/quiz.png" alt="Quiz page preview" style="width: 60%; height: auto">
+<img src="images/plate.png" alt="My plate preview" style="width: 60%; height: auto">
 
 ### Task List
 | No.  |     Feature     |  Date Tested |
@@ -112,5 +112,6 @@ For the mascots on our home page, both were designed to represent each category 
     - Logo
         - [Head](https://dlpng.com/png/1657829)
         - [Cutlery](https://www.shutterstock.com/image-vector/fork-knife-linear-icon-line-editable-790122049)
+- We made use of a [loading animation](https://lottiefiles.com/6607-loading-drop) from LottieFiles made by [KhanCindy](https://lottiefiles.com/khan).
 - Guiding and tips were given by Ms Dai Mei Hua and Mr Malcolm Yam 
 - Food nutritional information displayed was taken from [Spoonacular (RapidAPI)](https://rapidapi.com/spoonacular/api/recipe-food-nutrition/endpoints)/[Spoonacular](https://spoonacular.com/food-api/)
