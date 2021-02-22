@@ -56,7 +56,11 @@ What you will be able to do on this site:
 ## Testing
 
 ### Page Preview
-
+<img src="images/home.png" alt="Home page preview">
+<img src="images/categories.png" alt="Information category page preview">
+<img src="images/info.png" alt="Dessert information page preview">
+<img src="images/quiz.png" alt="Quiz page preview">
+<img src="images/plate.png" alt="My plate preview">
 
 ### Task List
 | No.  |     Feature     |  Date Tested |
