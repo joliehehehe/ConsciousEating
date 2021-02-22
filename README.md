@@ -40,14 +40,23 @@ For the mascots on our home page, both were designed to represent each category 
 
 ## Technologies Used
 
-### Languages
-
 - *[HTML](https://en.wikipedia.org/wiki/HTML#:~:text=Hypertext%20Markup%20Language%20(HTML)%20is,scripting%20languages%20such%20as%20JavaScript.)*
-    -HTML was used to create the skeleton of the whole webpage.
+    - HTML was used to create the skeleton of the whole webpage.
 - *[CSS](https://en.wikipedia.org/wiki/CSS)*
-    -CSS was used to apply designs to the webpage.
+    - CSS was used to apply designs to the webpage.
 - *[JavaScript](https://www.javascript.com/)*
-    -Javascript was used to create the quizzes, collectibles page and information pages.
+    - Javascript was used to create the quizzes, collectibles page and information pages.
+- *[JQuery](https://code.jquery.com/jquery-3.2.1.slim.min.js)*
+    - The project uses JQuery to simplify DOM manipulation
+- *[Bootstrap CSS](https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css)*
+- *[Bootstrap JS](https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js)*
+    - This project made use of Bootstrap CSS and JS
+- *[Ajax](https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js)*
+    - This project used Ajax
+- *[Application Programming Interface](https://rapidapi.com/spoonacular/api/recipe-food-nutrition/endpoints) (API)*
+    - This project fetched an API for data
+- *[Normalize.css](https://necolas.github.io/normalize.css/)*
+    - This projected utilised normalize.css
 
 ## Wire Frames
 
@@ -115,3 +124,6 @@ For the mascots on our home page, both were designed to represent each category 
 - We made use of a [loading animation](https://lottiefiles.com/6607-loading-drop) from LottieFiles made by [KhanCindy](https://lottiefiles.com/khan).
 - Guiding and tips were given by Ms Dai Mei Hua and Mr Malcolm Yam 
 - Food nutritional information displayed was taken from [Spoonacular (RapidAPI)](https://rapidapi.com/spoonacular/api/recipe-food-nutrition/endpoints)/[Spoonacular](https://spoonacular.com/food-api/)
+- Bootstrap was used in this project
+    - CSS
+    - Javascript
